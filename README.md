@@ -1,3 +1,6 @@
+If we dont deploy in any and run only in VS code we need to manually run
+pip install -r requirements.txt 
+and make sure that the langgraph and langchain variants are installed
 ✅ 5. Deploy on Render
 Go to https://render.com
 Click "New Web Service"

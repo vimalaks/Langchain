@@ -28,3 +28,9 @@ ERROR : while trying to deploy in render as webservice it keeps scanning for por
  FIX 2 : setting it up manually on Render:
           a) Choose "Background Worker" instead of "Web Service" when creating the service
           b) Use python app.py as the start command.
+ FIX 1 didnt help 
+ FIX 2 may work but render.com doesnt provide free instance to the background worker jobs
+
+ ✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅ALTERNATE METHOD ✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅
+ ✅ Using github codespaces
+ It is cloud environment where it provides VS code based dev environment

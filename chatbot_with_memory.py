@@ -32,13 +32,14 @@ config = {"configurable": {"thread_id": "abc123"}}
 
 print("Type exit to end the chat")
 while True:
-    msg = [HumanMessage(input("Enter your message: "))]
+    #msg = [HumanMessage(input("Enter your message: "))]# HumanMessage makes it a list
+    raw_msg = input("Enter your message: ")
     #if msg.lower() == "exit":
-    if msg.lower() == "exit":
+    if raw_msg.lower() == "exit":
         print("No more messages accepted")
         break   
 
-    
+    msg = [HumanMessage(raw_msg)] #later convert raw_msg to HumanMessage
     #below is the AI model's response to full conversation history
     ######response = model.invoke(storage)#(msg) #("Hello, World!")    
     response = app.invoke({"messages":msg},config)

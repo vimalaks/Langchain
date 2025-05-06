@@ -33,7 +33,8 @@ config = {"configurable": {"thread_id": "abc123"}}
 print("Type exit to end the chat")
 while True:
     msg = [HumanMessage(input("Enter your message: "))]
-    if msg.lower() == "exit":
+    #if msg.lower() == "exit":
+    if msg == "exit":
         print("No more messages accepted")
         break   
 

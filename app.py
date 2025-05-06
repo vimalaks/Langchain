@@ -7,5 +7,6 @@ if not os.environ.get("GROQ_API_KEY"):
 
 model = init_chat_model("llama3-8b-8192", model_provider="groq")
 
-response = model.invoke("Hello, World!")
-print(response)
+msg = input("Enter your message")
+response = model.invoke(msg) #("Hello, World!")
+print(response.content)

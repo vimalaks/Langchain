@@ -1,6 +1,6 @@
 services:
-  - type: web
-    name: groq-langchain-service
+  - type: worker
+    name: groq-langchain-worker
     env: python
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python app.py"

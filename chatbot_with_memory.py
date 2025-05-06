@@ -40,8 +40,8 @@ while True:
     
     #below is the AI model's response to full conversation history
     ######response = model.invoke(storage)#(msg) #("Hello, World!")    
-          response = app.invoke({"messages":msg},config)
+    response = app.invoke({"messages":msg},config)
 
     #printing the final response
     #####print("Assistant: ",response.content)
-          response["messages"][-1].pretty_print() #response contains all messages in state
+    response["messages"][-1].pretty_print() #response contains all messages in state
